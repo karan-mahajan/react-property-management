@@ -8,20 +8,20 @@ function App() {
     {
       id: 1,
       name: "Health Department",
-      cost: 4000000,
-      area: "Delhi",
+      size: 1234,
+      description: 'Testing 1'
     },
     {
       id: 2,
       name: "Sport Complex",
-      cost: 8000000,
-      area: "Mumbai",
+      size: 5000,
+      description: 'Testing 1'
     },
     {
       id: 3,
       name: "Shopping Mall",
-      cost: 40000000,
-      area: "Punjab",
+      size: 4500,
+      description: 'Testing 1'
     },
   ]);
 

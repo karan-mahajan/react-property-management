@@ -1,0 +1,22 @@
+{
+  "properties": [
+    {
+      "id": 3,
+      "name": "Shopping Mall",
+      "size": "4500",
+      "description": "Testing 1"
+    },
+    {
+      "name": "Hospital",
+      "size": "9000",
+      "description": "Near Metro Station",
+      "id": 4
+    },
+    {
+      "name": "Cricket Ground",
+      "size": "2000",
+      "description": "For Playing Cricket",
+      "id": 5
+    }
+  ]
+}

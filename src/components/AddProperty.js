@@ -2,19 +2,19 @@ import { useState } from "react"
 
 const AddProperty = ({ onAdd }) => {
     const [name, setName] = useState('')
-    const [cost, setCost] = useState('')
-    const [area, setArea] = useState('')
+    const [size, setSize] = useState('')
+    const [description, setDescription] = useState('')
 
     const onSubmit = (e) => {
         e.preventDefault()
-        if (!name || !cost || !area) {
+        if (!name || !size || !description) {
             alert('Please Enter all the values')
             return
         }
-        setArea('')
-        setCost('')
+        setDescription('')
+        setSize('')
         setName('')
-        onAdd({ name, cost, area })
+        onAdd({ name, size, description })
     }
 
     return (
@@ -24,12 +24,12 @@ const AddProperty = ({ onAdd }) => {
                 <input value={name} type='text' placeholder='Property Name' onChange={(e) => setName(e.target.value)}></input>
             </div>
             <div className='form-control'>
-                <label>Property Cost</label>
-                <input value={cost} type='number' onChange={(e) => setCost(e.target.value)} placeholder='Property Cost'></input>
+                <label>Property Size</label>
+                <input value={size} type='text' onChange={(e) => setSize(e.target.value)} placeholder='Property Size'></input>
             </div>
             <div className='form-control'>
-                <label>Property Area</label>
-                <input value={area} type='text' onChange={(e) => setArea(e.target.value)} placeholder='Property Area'></input>
+                <label>Property Description</label>
+                <input value={description} type='text' onChange={(e) => setDescription(e.target.value)} placeholder='Property Description'></input>
             </div>
             <input type='submit' value='Add Property' className='btn btn-block'></input>
         </form>
